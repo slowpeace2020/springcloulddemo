@@ -1,4 +1,10 @@
 # 配置tomcat端口号
 server:
   port: 8080
-
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:10086/eureka
+spring:
+  application:
+    name: comsumer-service

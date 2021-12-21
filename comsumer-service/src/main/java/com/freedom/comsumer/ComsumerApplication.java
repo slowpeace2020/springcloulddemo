@@ -3,6 +3,7 @@ package com.freedom.comsumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -10,6 +11,7 @@ import org.springframework.web.client.RestTemplate;
  * 启动类
  */
 @SpringBootApplication
+@EnableDiscoveryClient
 public class ComsumerApplication {
 
     public static void main(String[] args){
